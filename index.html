@@ -562,10 +562,8 @@
         let csvData = [];
         let dataTable;
         
-        // Load CSV data
-        // For GitHub Pages: use 'extracted_calls.csv' (file in root)
-        // For local: use 'outputs/extracted_calls.csv'
-        Papa.parse('outputs/extracted_calls.csv', {
+        
+        Papa.parse('extracted_calls.csv', {
             download: true,
             header: true,
             complete: function(results) {
