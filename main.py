@@ -109,7 +109,7 @@ def call_gemini_api(prompt: str, max_retries: int = 3) -> Optional[Dict[str, Any
         print("ERROR: GEMINI_API_KEY not found in environment variables")
         return None
     
-    model = genai.GenerativeModel('gemini-2.0-flash-exp')
+    model = genai.GenerativeModel('gemini-2.0-flash')
     
     for attempt in range(max_retries):
         try:
